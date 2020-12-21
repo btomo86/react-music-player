@@ -5,7 +5,7 @@ import "./styles/app.scss";
 import data from "./util";
 
 function App() {
-  const [songs, Setsongs] = useState(data());
+  const [songs, setSongs] = useState(data());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
   return (
