@@ -14,7 +14,7 @@ const LibrarySong = ({
     audioRef.current.play();
 
     const newSongs = songs.map((song) => {
-      if (song.id == id) {
+      if (song.id === id) {
         return {
           ...song,
           active: true,
